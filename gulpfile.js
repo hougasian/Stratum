@@ -1,26 +1,31 @@
 /*global require*/
 
-var gulp = require("gulp"),
-    sass = require("gulp-sass"),
-    debug = require("gulp-debug");
+const { src, dest, parallel, watch } = require('gulp');
+const connect = require('gulp-connect');
+const sass = require("gulp-sass");
 
-var paths = {
+const paths = {
     sassSource: "css/scss/*.scss",
     sassDest: "css"
 };
 
-// Compile & minify Sass
-gulp.task("sass", function() {
-  return gulp.src(paths.sassSource)
+function serve() {
+  connect.server({
+    root: './',
+    port: 8009,
+    livereload: true
+  });
+}
+
+function css() {
+  return src(paths.sassSource)
     .pipe(sass())
-    .pipe(debug())
-    .pipe(gulp.dest(paths.sassDest));
-});
+    .pipe(dest(paths.sassDest));
+}
 
-// Watch Files For Changes
-gulp.task("watch", function() {
-  gulp.watch(paths.sassSource, ["sass"]);
-});
+function watchFiles() {
+  watch(paths.sassSource, css);
+}
 
-// Default Task
-gulp.task("default", ["sass", "watch"]);
+exports.runSass = css;
+exports.default = parallel(css, serve, watchFiles);

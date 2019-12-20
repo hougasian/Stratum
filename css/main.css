@@ -590,7 +590,7 @@ div {
 
 .alert-box {
   color: #ff3814 !important;
-  background: #ffcfc6;
+  background: #ffcfc7;
   border-top: 1px solid tomato;
   border-bottom: 1px solid tomato;
   font-weight: normal !important;
@@ -601,7 +601,7 @@ div {
 
 .alert-status {
   color: #ff3814 !important;
-  background: #ffcfc6;
+  background: #ffcfc7;
   border-top: 1px solid tomato;
   border-bottom: 1px solid tomato;
   font-weight: normal !important;
@@ -617,7 +617,7 @@ div {
 
 .success-box {
   color: #004d00 !important;
-  background: #33ff33;
+  background: #34ff34;
   border-top: 1px solid green;
   border-bottom: 1px solid green;
   font-weight: normal !important;
@@ -628,7 +628,7 @@ div {
 
 .success-status {
   color: #004d00 !important;
-  background: #33ff33;
+  background: #34ff34;
   border-top: 1px solid green;
   border-bottom: 1px solid green;
   font-weight: normal !important;
@@ -671,7 +671,7 @@ div {
 
 .info-box {
   color: #0077ea !important;
-  background: #d0e8ff;
+  background: #d1e8ff;
   border-top: 1px solid dodgerblue;
   border-bottom: 1px solid dodgerblue;
   font-weight: normal !important;
@@ -823,10 +823,10 @@ div {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-text-shadow: 0px 1px 1px #0483ff;
-    -moz-text-shadow: 0px 1px 1px #0483ff;
-    -o-text-shadow: 0px 1px 1px #0483ff;
-    text-shadow: 0px 1px 1px #0483ff; }
+    -webkit-text-shadow: 0px 1px 1px #0583ff;
+    -moz-text-shadow: 0px 1px 1px #0583ff;
+    -o-text-shadow: 0px 1px 1px #0583ff;
+    text-shadow: 0px 1px 1px #0583ff; }
   .card.vertical .card--body {
     min-height: 90%; }
   .card:hover {
@@ -851,7 +851,7 @@ div {
     .card:hover--title {
       background: #eee; }
     .card:hover--bar {
-      background-color: #6ab6ff;
+      background-color: #6bb6ff;
       -webkit-box-shadow: 0px 0px 5px #ccc;
       -moz-box-shadow: 0px 0px 5px #ccc;
       -o-box-shadow: 0px 0px 5px #ccc;

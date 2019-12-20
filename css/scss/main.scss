@@ -16,6 +16,13 @@
 // Load mixins manifest
 @import "mixins";
 
+// Load components
+@import "breakpoints";
+@import "typography";
+@import "grid";
+@import "messages";
+@import "scrollbar";
+
 // Load elements
 /// --- Do not load if using on top of another CSS framework. --- ///
 @import "elements";
@@ -24,9 +31,7 @@
 // Store all application colors here
 @import "theme";
 
-// Load mods
-@import "grid";
-@import "messages";
+// Load Mods
 @import "cards";
 
 // Load Helpers
